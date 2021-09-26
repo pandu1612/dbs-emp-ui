@@ -1,0 +1,16 @@
+<h2>Employee Profile</h2> 
+
+<hr/>
+<div *ngIf="employee">
+  <div>
+    <label><b>Id: </b></label> {{employee.id}}
+  </div>
+  <div>
+    <label><b>Name: </b></label> {{employee.name}}
+  </div>
+  <div>
+    <label><b>Email Id: </b></label> {{employee.emailId}}
+  </div>  
+</div>
+
+<button class="btn btn-success"><a routerLink="/login" routerLinkActive="active"><span style="color: white;">Login page</span></a></button>

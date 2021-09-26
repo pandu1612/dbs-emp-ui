@@ -1,0 +1,22 @@
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employees | async">
+                <td>{{employee.id}}</td>
+                <td>{{employee.name}}</td>
+                <td>{{employee.emailId}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div><button class="btn btn-success">
+
+        <a routerLink="/login" routerLinkActive="active"><span style="color: white;">Login page</span></a></button>
+</div>
